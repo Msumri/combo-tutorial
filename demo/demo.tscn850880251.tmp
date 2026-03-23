@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://bgpr503otkluq"]
 
-[ext_resource type="Script" uid="uid://cakmy5k6eo6xn" path="res://demo/character_body_2d.gd" id="1_onu7k"]
 [ext_resource type="Script" uid="uid://chv7222w0fio" path="res://demo/demo.gd" id="1_s1s6j"]
 [ext_resource type="Texture2D" uid="uid://dm6x6qoesd4n5" path="res://Martial Hero 3/Sprite/Attack1.png" id="2_s1s6j"]
 [ext_resource type="Texture2D" uid="uid://brepydt4h8gor" path="res://Martial Hero 3/Sprite/Attack2.png" id="3_onvmd"]
@@ -327,8 +326,8 @@ size = Vector2(505, 13)
 script = ExtResource("1_s1s6j")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=530386137]
+visible = false
 position = Vector2(414, 406)
-script = ExtResource("1_onu7k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1503242779]
 texture_filter = 1
