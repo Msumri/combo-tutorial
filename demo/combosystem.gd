@@ -1,5 +1,6 @@
-extends Node2D
+extends Node
 
+class_name Combo_system
 var input_buffer:=[]
 var combos:={
 	"combo_3":["attack1","attack2","attack1","attack1","attack2"],
@@ -8,9 +9,8 @@ var combos:={
 }
 
 var input_buffer_timer := 0.0
-var input_buffer_time_limit := 0.6
+var input_buffer_time_limit := 2
 var tracked_actions:=["attack1","attack2"]
-var keep_input:=false
 
 var combo_resolve_timer := 0.0
 var combo_resolve_delay := 0.2
@@ -28,13 +28,13 @@ func _process(delta: float) -> void:
 	else:
 		input_buffer_timer -= delta
 		
-	if input_buffer.size() > 0:
-		keep_input=false #this hold for animation
+
 	
 	if combo_resolve_timer > 0:
 		combo_resolve_timer -= delta
 	if combo_resolve_timer <= 0:
-		check_combos()
+		if check_combos():
+			excute_action()
 	print(input_buffer)
 func _input(event: InputEvent) -> void:
 	if event.is_pressed():
@@ -44,16 +44,25 @@ func _input(event: InputEvent) -> void:
 					input_buffer_timer =  input_buffer_time_limit
 					combo_resolve_timer = combo_resolve_delay
 					
-func check_combos():
+func check_combos()->bool:
 	for combo_name in combos.keys():
 		var combo = combos[combo_name]
 		
 		if ends_with_sequence(input_buffer, combo):
 			print("Combo detected: ", combo_name)
+			
 			input_buffer.append(combo_name)
+			return true
+	return false
+func excute_action()-> String:
+	var action:=""
+	if input_buffer.size()>0:
+		action=input_buffer[0]
 
-
+	return action
 	
+func cancel_buffer_input():
+	input_buffer.clear()
 	
 func ends_with_sequence(buffer: Array, sequence: Array) -> bool:
 	if buffer.size() < sequence.size():
