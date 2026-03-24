@@ -10,6 +10,8 @@ var tracked_actions:=["attack1","attack2"]
 
 func _ready() -> void:
 	add_child(combo_system)
+	combo_system.input_buffer_time_limit=1 #default value (if your comobos are longer you might need a longer wait time)
+	combo_system.combo_resolve_delay=0.2 #default value
 	combo_system.combos={
 	"combo_3":["attack1","attack2","attack1","attack1","attack2"],
 	"combo_2":["attack1","attack1","attack2"],
@@ -64,7 +66,7 @@ func attack(attack:String):
 	if is_attacking:
 		return
 	is_attacking=true
-	var displacment:=10
+	var displacment:=5
 	if animatedS.flip_h:
 			displacment*=-1
 	velocity.x+=move_toward(velocity.x, velocity.x+displacment, SPEED)

@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="combo tutorial"
+run/main_scene="uid://bgpr503otkluq"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [input]
 

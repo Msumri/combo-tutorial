@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brepydt4h8gor"
-path="res://.godot/imported/Attack2.png-09b9f06a1d944f123888ff3dcd431d9b.ctex"
+uid="uid://dv3tcxnvkepd0"
+path="res://.godot/imported/Going Down.png-9119b97322d3541277087519b4ced288.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Martial Hero 3/Sprite/Attack2.png"
-dest_files=["res://.godot/imported/Attack2.png-09b9f06a1d944f123888ff3dcd431d9b.ctex"]
+source_file="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Going Down.png"
+dest_files=["res://.godot/imported/Going Down.png-9119b97322d3541277087519b4ced288.ctex"]
 
 [params]
 

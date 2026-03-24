@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bgpr503otkluq"]
 
-[ext_resource type="Script" uid="uid://cakmy5k6eo6xn" path="res://demo/character_body_2d.gd" id="1_onu7k"]
-[ext_resource type="Texture2D" uid="uid://dm6x6qoesd4n5" path="res://Martial Hero 3/Sprite/Attack1.png" id="2_s1s6j"]
-[ext_resource type="Texture2D" uid="uid://brepydt4h8gor" path="res://Martial Hero 3/Sprite/Attack2.png" id="3_onvmd"]
-[ext_resource type="Texture2D" uid="uid://b7rlhnxsde7um" path="res://Martial Hero 3/Sprite/Attack3.png" id="4_oeqrt"]
-[ext_resource type="Texture2D" uid="uid://bvico20i0qcyy" path="res://Martial Hero 3/Sprite/Idle.png" id="5_ykvhj"]
-[ext_resource type="Texture2D" uid="uid://c5stalcywjabr" path="res://Martial Hero 3/Sprite/Run.png" id="6_1rqa4"]
+[ext_resource type="Script" uid="uid://cakmy5k6eo6xn" path="res://addons/Input_buffer_combo_system/demo/character_body_2d.gd" id="1_onu7k"]
+[ext_resource type="Texture2D" uid="uid://dm6x6qoesd4n5" path="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Attack1.png" id="2_s1s6j"]
+[ext_resource type="Texture2D" uid="uid://brepydt4h8gor" path="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Attack2.png" id="3_onvmd"]
+[ext_resource type="Texture2D" uid="uid://b7rlhnxsde7um" path="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Attack3.png" id="4_oeqrt"]
+[ext_resource type="Texture2D" uid="uid://bvico20i0qcyy" path="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Idle.png" id="5_ykvhj"]
+[ext_resource type="Texture2D" uid="uid://c5stalcywjabr" path="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Run.png" id="6_1rqa4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xm42s"]
 atlas = ExtResource("2_s1s6j")

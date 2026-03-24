@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv3tcxnvkepd0"
-path="res://.godot/imported/Going Down.png-174937bc4c0a815df0abd476127f6878.ctex"
+uid="uid://bvico20i0qcyy"
+path="res://.godot/imported/Idle.png-bfd29d34b62708fb86ab1de17c956aba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Martial Hero 3/Sprite/Going Down.png"
-dest_files=["res://.godot/imported/Going Down.png-174937bc4c0a815df0abd476127f6878.ctex"]
+source_file="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-bfd29d34b62708fb86ab1de17c956aba.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j6xf60hx2x0q"
-path="res://.godot/imported/Going Up.png-b774c4267e076a90852d5b5a5211aed3.ctex"
+path="res://.godot/imported/Going Up.png-577a1c5dc2f636ecd09ee910b7a7e47b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Martial Hero 3/Sprite/Going Up.png"
-dest_files=["res://.godot/imported/Going Up.png-b774c4267e076a90852d5b5a5211aed3.ctex"]
+source_file="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Going Up.png"
+dest_files=["res://.godot/imported/Going Up.png-577a1c5dc2f636ecd09ee910b7a7e47b.ctex"]
 
 [params]
 

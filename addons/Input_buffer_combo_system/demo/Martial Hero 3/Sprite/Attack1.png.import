@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dipibhqs03uix"
-path="res://.godot/imported/Death.png-a20c811fc06d0679a38b978671a42576.ctex"
+uid="uid://dm6x6qoesd4n5"
+path="res://.godot/imported/Attack1.png-dd0da1042f5a0e9fe19770f9e223d148.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Martial Hero 3/Sprite/Death.png"
-dest_files=["res://.godot/imported/Death.png-a20c811fc06d0679a38b978671a42576.ctex"]
+source_file="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Attack1.png"
+dest_files=["res://.godot/imported/Attack1.png-dd0da1042f5a0e9fe19770f9e223d148.ctex"]
 
 [params]
 

@@ -3,14 +3,12 @@ extends Node
 class_name Combo_system
 var input_buffer:=[]
 var combos:={
-	"combo_3":["attack1","attack2","attack1","attack1","attack2"],
-	"combo_2":["attack1","attack1","attack2"],
-	"combo_1":["attack1","attack2"],
+	
 }
 
 var input_buffer_timer := 0.0
-var input_buffer_time_limit := 2
-var tracked_actions:=["attack1","attack2"]
+var input_buffer_time_limit := 1
+var tracked_actions:=[]
 
 var combo_resolve_timer := 0.0
 var combo_resolve_delay := 0.2
@@ -23,34 +21,35 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if  input_buffer_timer <= 0:
-		input_buffer.remove_at(0)
-	else:
-		input_buffer_timer -= delta
+	if input_buffer.size()>0:
+		if  input_buffer_timer <= 0:
+			input_buffer.remove_at(0)
+		else:
+			input_buffer_timer -= delta
 		
+	if combos.size()>0:
+		if combo_resolve_timer > 0:
+			combo_resolve_timer -= delta
+		if combo_resolve_timer <= 0:
+			if check_combos():
+				excute_action()
 
-	
-	if combo_resolve_timer > 0:
-		combo_resolve_timer -= delta
-	if combo_resolve_timer <= 0:
-		if check_combos():
-			excute_action()
-	print(input_buffer)
 func _input(event: InputEvent) -> void:
 	if event.is_pressed():
+		if tracked_actions.size()==0:
+			return
 		for action in tracked_actions:
 			if InputMap.event_is_action(event, action):
 					input_buffer.append(action)
 					input_buffer_timer =  input_buffer_time_limit
 					combo_resolve_timer = combo_resolve_delay
-					
+						
 func check_combos()->bool:
+
 	for combo_name in combos.keys():
 		var combo = combos[combo_name]
 		
-		if ends_with_sequence(input_buffer, combo):
-			print("Combo detected: ", combo_name)
-			
+		if ends_with_sequence(input_buffer, combo):			
 			input_buffer.append(combo_name)
 			return true
 	return false

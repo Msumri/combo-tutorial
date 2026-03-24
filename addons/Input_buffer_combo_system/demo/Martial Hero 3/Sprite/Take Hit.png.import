@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d7t8a4aw1hlc"
-path="res://.godot/imported/Preview.png-89f9c4d2f135940cfa0fa411bfd1693a.ctex"
+uid="uid://bwvbbbwt75oi6"
+path="res://.godot/imported/Take Hit.png-33f86ecf66ab56b7dcca8b5bce1caaa4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Martial Hero 3/Preview.png"
-dest_files=["res://.godot/imported/Preview.png-89f9c4d2f135940cfa0fa411bfd1693a.ctex"]
+source_file="res://addons/Input_buffer_combo_system/demo/Martial Hero 3/Sprite/Take Hit.png"
+dest_files=["res://.godot/imported/Take Hit.png-33f86ecf66ab56b7dcca8b5bce1caaa4.ctex"]
 
 [params]
 
